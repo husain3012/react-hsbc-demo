@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* dark */
+    background-color: #1a1a1a;
+    color: white;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.emp-card{
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.emp-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+.emp-name-span{
+    color: #f1c40f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.emp-id{
+    font-size: 16px;
+    color: #f1c40f;
+}
+.emp-id-span{
+    color: #f1c40f;
 }
 
-.App-link {
-  color: #61dafb;
+.emp-salary{
+    font-size: 16px;
+    color: #f1c40f;
+}
+.emp-salary-span{
+    color: #f1c40f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.car-card{
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.car-make{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+.car-make-span{
+    color: #f1c40f;
+}
+
+.car-model{
+    font-size: 16px;
+    color: #f1c40f;
+}
+.car-model-span{
+    color: #f1c40f;
+}
+.car-year{
+    font-size: 16px;
+    color: #f1c40f;
+}
+.car-year-span{
+    color: #f1c40f;
+}
+
+.emp-form{
+    width: 300px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-label{
+    font-size: 16px;
+    color: #f1c40f;
+}
+.input-label input{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a1a1a;
+    color: white;
+}
+.submit-btn{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1c40f;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.emp-table-container{
+    width: 60ch;
+    max-height: 70vh;
+    overflow-y: auto;
+    
+}
+
+.emp-table-container .no-emp{
+    color: #f1c40f;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+.emp-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  
+}
+.emp-table th, .emp-table td{
+    border: 1px solid #f1c40f;
+    padding: 10px;
+    text-align: center;
+}
+
+.emp-table th{
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.status-message-container{
+    width: 60ch;
+    position: absolute;
+    margin: 0 auto;
+    top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0px;
+    background-color: transparent;
+}
+.status-message{
+    position: relative;
+    color: #333;
+    background-color: #f1c40f;
+    padding: 10px;
+    border-radius: 0.5em;
+    font-size: 1em;
+
+
+}
+.delete-btn{
+    background-color: #ff7e67;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
